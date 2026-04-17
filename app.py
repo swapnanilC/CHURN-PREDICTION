@@ -25,7 +25,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-model = tf.keras.models.load_model('my_model.keras')
+model = tf.keras.models.load_model('model.h5')
 
 with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
